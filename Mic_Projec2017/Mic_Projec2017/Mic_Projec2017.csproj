@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="InvMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvMain.Designer.cs">
+      <DependentUpon>InvMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +74,9 @@
       <DependentUpon>ProMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InvMain.resx">
+      <DependentUpon>InvMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

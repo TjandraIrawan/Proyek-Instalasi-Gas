@@ -12,9 +12,12 @@ namespace Mic_Projec2017
 {
     public partial class Menu_Utama : Form
     {
+        public static Menu_Utama mdiobj;
+
         public Menu_Utama()
         {
             InitializeComponent();
+
         }
         
         private void Menu_Utama_FormClosed(object sender, FormClosedEventArgs e)
@@ -24,9 +27,31 @@ namespace Mic_Projec2017
 
         private void proyekToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProMain obj = new ProMain();
-            obj.MdiParent = this;
+           
+        }
+
+        private void PelangganToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PelangganToolStripMenuItem.Enabled = false;
+            ProMain obj = new ProMain
+            {
+                MdiParent = this
+            };
             obj.Show();
+            mdiobj = this;
+        }
+
+        private void PersediaanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            persediaanToolStripMenuItem.Enabled = false;
+            InvMain obj = new InvMain
+            {
+                MdiParent = this
+            };
+            obj.Show();
+            
+            mdiobj = this;
+            
         }
     }
 }

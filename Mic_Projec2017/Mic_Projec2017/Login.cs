@@ -13,9 +13,11 @@ namespace Mic_Projec2017
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
             InitializeComponent();
+            GlobalVariable.UserId = txtUserName.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,6 +36,7 @@ namespace Mic_Projec2017
                 sda.Fill(dt);
                 if (dt.Rows.Count == 1)
                 {
+                    //UserId = txtUserName.Text;
                     Menu_Utama obj = new Menu_Utama();
                     obj.Show();
                     this.Hide();

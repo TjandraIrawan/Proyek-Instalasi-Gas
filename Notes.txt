@@ -9,12 +9,10 @@ Laporan
 
 Persediaan:
 Master
-Pembelian
-BPB
 Return
 Good Issued
 Good Received
-Report
+Laporan
 
 Man Power:
 Master
@@ -22,6 +20,7 @@ Parameter
 
 Vendor:
 Master
+Pembelian
 
 Pekerjaan:
 Master

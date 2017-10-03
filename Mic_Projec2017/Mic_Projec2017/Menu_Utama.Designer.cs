@@ -30,11 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PelangganToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vendorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.persediaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sumberDayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pekerjaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userIDRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -46,8 +49,14 @@
             // 
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.masterToolStripMenuItem,
-            this.persediaanToolStripMenuItem});
+            this.PelangganToolStripMenuItem,
+            this.persediaanToolStripMenuItem,
+            this.vendorToolStripMenuItem1,
+            this.sumberDayaToolStripMenuItem,
+            this.pekerjaanToolStripMenuItem,
+            this.marketingToolStripMenuItem,
+            this.utilitiesToolStripMenuItem,
+            this.userIDRoleToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
@@ -55,34 +64,12 @@
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
-            // masterToolStripMenuItem
-            // 
-            this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PelangganToolStripMenuItem,
-            this.vendorToolStripMenuItem,
-            this.inventoryToolStripMenuItem});
-            this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
-            this.masterToolStripMenuItem.Text = "Master";
-            // 
             // PelangganToolStripMenuItem
             // 
             this.PelangganToolStripMenuItem.Name = "PelangganToolStripMenuItem";
-            this.PelangganToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.PelangganToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.PelangganToolStripMenuItem.Text = "Pelanggan";
             this.PelangganToolStripMenuItem.Click += new System.EventHandler(this.PelangganToolStripMenuItem_Click);
-            // 
-            // vendorToolStripMenuItem
-            // 
-            this.vendorToolStripMenuItem.Name = "vendorToolStripMenuItem";
-            this.vendorToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
-            this.vendorToolStripMenuItem.Text = "Vendor";
-            // 
-            // inventoryToolStripMenuItem
-            // 
-            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
-            this.inventoryToolStripMenuItem.Text = "Persediaan";
             // 
             // persediaanToolStripMenuItem
             // 
@@ -90,6 +77,48 @@
             this.persediaanToolStripMenuItem.Size = new System.Drawing.Size(108, 29);
             this.persediaanToolStripMenuItem.Text = "Persediaan";
             this.persediaanToolStripMenuItem.Click += new System.EventHandler(this.PersediaanToolStripMenuItem_Click);
+            // 
+            // vendorToolStripMenuItem1
+            // 
+            this.vendorToolStripMenuItem1.Name = "vendorToolStripMenuItem1";
+            this.vendorToolStripMenuItem1.Size = new System.Drawing.Size(81, 29);
+            this.vendorToolStripMenuItem1.Text = "Vendor";
+            this.vendorToolStripMenuItem1.Click += new System.EventHandler(this.vendorToolStripMenuItem1_Click);
+            // 
+            // sumberDayaToolStripMenuItem
+            // 
+            this.sumberDayaToolStripMenuItem.Name = "sumberDayaToolStripMenuItem";
+            this.sumberDayaToolStripMenuItem.Size = new System.Drawing.Size(131, 29);
+            this.sumberDayaToolStripMenuItem.Text = "Sumber Daya";
+            this.sumberDayaToolStripMenuItem.Click += new System.EventHandler(this.sumberDayaToolStripMenuItem_Click);
+            // 
+            // pekerjaanToolStripMenuItem
+            // 
+            this.pekerjaanToolStripMenuItem.Name = "pekerjaanToolStripMenuItem";
+            this.pekerjaanToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.pekerjaanToolStripMenuItem.Text = "Pekerjaan";
+            this.pekerjaanToolStripMenuItem.Click += new System.EventHandler(this.pekerjaanToolStripMenuItem_Click);
+            // 
+            // marketingToolStripMenuItem
+            // 
+            this.marketingToolStripMenuItem.Name = "marketingToolStripMenuItem";
+            this.marketingToolStripMenuItem.Size = new System.Drawing.Size(104, 29);
+            this.marketingToolStripMenuItem.Text = "Marketing";
+            this.marketingToolStripMenuItem.Click += new System.EventHandler(this.marketingToolStripMenuItem_Click);
+            // 
+            // utilitiesToolStripMenuItem
+            // 
+            this.utilitiesToolStripMenuItem.Name = "utilitiesToolStripMenuItem";
+            this.utilitiesToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
+            this.utilitiesToolStripMenuItem.Text = "Utilities";
+            this.utilitiesToolStripMenuItem.Click += new System.EventHandler(this.utilitiesToolStripMenuItem_Click);
+            // 
+            // userIDRoleToolStripMenuItem
+            // 
+            this.userIDRoleToolStripMenuItem.Name = "userIDRoleToolStripMenuItem";
+            this.userIDRoleToolStripMenuItem.Size = new System.Drawing.Size(121, 29);
+            this.userIDRoleToolStripMenuItem.Text = "User ID Role";
+            this.userIDRoleToolStripMenuItem.Click += new System.EventHandler(this.userIDRoleToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -122,7 +151,7 @@
             this.Name = "Menu_Utama";
             this.Text = "Aplikasi Proyek Instalasi Gas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_Utama_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_Utama_FormClosing);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
@@ -138,11 +167,14 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolTip toolTip;
-        public System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem PelangganToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem vendorToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem persediaanToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem vendorToolStripMenuItem1;
+        public System.Windows.Forms.ToolStripMenuItem sumberDayaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem pekerjaanToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem marketingToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem utilitiesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem userIDRoleToolStripMenuItem;
     }
 }
 

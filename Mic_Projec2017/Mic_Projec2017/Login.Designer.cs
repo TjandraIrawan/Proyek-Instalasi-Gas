@@ -87,7 +87,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(478, 140);
+            this.txtUserName.Location = new System.Drawing.Point(478, 137);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(239, 26);
             this.txtUserName.TabIndex = 7;
@@ -97,7 +97,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(302, 193);
+            this.label2.Location = new System.Drawing.Point(319, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 32);
             this.label2.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(302, 140);
+            this.label1.Location = new System.Drawing.Point(302, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 32);
             this.label1.TabIndex = 6;

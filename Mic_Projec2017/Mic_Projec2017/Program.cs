@@ -16,6 +16,9 @@ namespace Mic_Projec2017
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // Initialize database connection
+            //TrackerLibrary.GlobalConfig.InitializeConnections(true, true);
             Application.Run(new Login());
         }
     }
